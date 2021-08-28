@@ -1,0 +1,341 @@
+
+/*
+	author KA Rasanjalee
+	IT19150444
+	kandy weekday
+	G1_G8_vehicle rental system
+	
+*/
+
+@charset "ISO-8859-1";
+body{
+	background-image :url("Background.jpg");
+	font-family:Segoe UI;
+}
+#Mysidenav a{
+  position: absolute;
+  right: -70px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 200px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  border-radius:  15px 0  0 15px;
+   
+}
+#Mysidenav a:hover {
+  right: 0;
+}
+#home{
+	top:200px;
+	background-color:#005ce6;
+}
+#login{
+	top:260px;
+	background-color:#005ce6;
+}
+#SignUp{
+	top:320px;
+	background-color:#1a75ff;
+}
+#Payment{
+	top:380px;
+	background-color:#4d94ff;
+}
+#AboutUs{
+	top:440px;
+	background-color:#80b3ff;
+}
+#ContactUs{
+	top:500px;
+	background-color:#b3d1ff;
+}
+#MassageUs{
+	top:560px;
+	background-color:#cce0ff;
+}
+#name{
+	color:#000066;
+	font-family:Tempus Sans ITC;
+	  font-size: 100px;
+	  margin-left:30px;
+}
+#name1{
+	color:#000066;
+	font-family:Segoe UI;
+	font-size: 30px;
+	position: absolute;
+	top:200px;
+	margin-left:100px;
+	text-decoration: none;
+	animation-direction:normal;
+	animation: mymove 2s ;
+}
+@keyframes mymove {
+  from { left: 100px; }
+  to {left: 200px;}
+}
+
+* {
+  box-sizing: border-box;
+  
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("travel1.jpg");
+  height: 900px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.bg-img1 {
+  /* The image used */
+  background-image: url("travel1.jpg");
+  height: 1500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 100px;
+  margin: 20px;
+  max-width: 1000px;
+  padding: 10px;
+  background-color: white;
+  font-family:Segoe UI;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #0080ff;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.btn1 {
+  background-color: #0080ff;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  position: absolute;
+  top:75%;
+  width:50%;
+  left:800px;
+}
+
+.btn1:hover {
+  opacity: 1;
+}
+.row {
+	
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+text-align: center;
+  flex: 50%;
+  padding: 50px;
+ 
+}
+.pic{
+	 position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+	
+}
+.pic img {vertical-align: middle;}
+
+.row .pic .name1 {
+  position: absolute;
+  left:18.5%;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 63%;
+  padding: 10px;
+}
+.row .pic .name2 {
+  position: absolute;
+  left:12.5%;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  height:50%;
+  width: 75%;
+  padding: 20px;
+}
+.pic1{
+	 position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+	
+}
+.pic1 img {vertical-align: middle;}
+
+.row .pic1 .name3 {
+  position: absolute;
+  left:20%;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 60%;
+  padding: 10px;
+}
+.row .pic1 .name4 {
+  position: absolute;
+  left:15%;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 70%;
+  padding: 10px;
+}
+
+.insert{
+ background-image: url("train.jpg");
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+ select { 
+ 				font-weight: bold;
+ 				font-size:17px;
+ 				font-family:Segoe UI;
+                appearance: none; 
+                outline: 0; 
+                background: #69D1A7; 
+                background-image: none; 
+                width: 15em; 
+                height: 2em; 
+                color: white; 
+                cursor: pointer; 
+                border:1px #69D1A7; 
+                border-radius:3px; 
+ }
+ .select { 
+                position: relative; 
+                display: block; 
+                width: 15em; 
+                height: 2em; 
+                line-height: 3; 
+                overflow: hidden; 
+                background: #69D1A7;
+                border-radius: 1px #69D1A7; 
+                padding-bottom:10px; 
+                  
+              }
+ #title{
+  font-size:30px;
+  position: absolute;
+  left:100px;
+  }
+  
+ div.id{
+	height:200px; 
+	width:900px;
+	position: relative;
+  left:200px;
+}
+
+.list {
+	
+	position: absolute;
+  left:200px;
+	
+}
+#update{
+	
+position: relative;
+  top:275px;
+	left:100px;
+	  background-color: #0080ff;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 500px;
+  opacity: 0.9;
+  font-size:25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+	
+	background-color:#000033;
+	color:white;
+	left:0;
+	bottom:0;
+	width:100%;
+	height:300px;
+	text-align:center;
+	
+}
+button {
+  background-color: #000033;
+  border: none;
+  color: #bfbfbf;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+ 
+}
+
+li{
+	list-style:none;
+	margin:10px 20px;
+	display:inline-block;
+	font-size:40px;
+	padding:20px 20px;
+	color:#bfbfbf;
+	
+	
+}
